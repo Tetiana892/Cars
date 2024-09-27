@@ -9,6 +9,26 @@
 
  require get_template_directory() . '/inc/widget-about.php';
 
+function geniuscourses_paginate($query){
+	$big = 99999999999;
+
+	$paged = '';
+	if(is_singular()){
+		$paged = get_query_var( 'page');
+	} else {
+		$paged = get_query_var( 'paged' );
+	}
+
+	echo paginate_links([
+'base'      => str_replace($big, '%#%', esc_url(get_pagenum_link( $big) )),
+'format'    => '?paged=%#%',
+'current'   => max(1, get_query_var('paged')),
+'total'     => $query->max_num_pages,
+'prev_next' => false
+
+	]);
+}
+
  function geniuscourses_widgets_init() {
 	register_sidebar(
 		array(

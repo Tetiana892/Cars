@@ -18,11 +18,26 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+	<?php 
+	$paged = (get_query_var('paged')) ? (get_query_var('paged')) : 1;
+	$cars = new WP_Query([
+		'post_type' => 'car',
+		'posts_per_page' => 1,
+		'paged' => $paged
+	]);
+	
+	if($cars->have_posts()) : while($cars->have_posts()) : $cars->the_post(); ?>
 
 	<?php  get_template_part('partials/content'); ?>
 
-	<?php endwhile; else : ?>
+	<?php endwhile; ?>
+
+	 <div class="pagination">
+	<?php geniuscourses_paginate($cars); ?>
+	</div>
+	
+	<?php
+	else : ?>
 		<?php  get_template_part('partials/content', 'none'); ?>
 		<?php endif; ?>
 </div>

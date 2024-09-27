@@ -8,9 +8,11 @@ get_header();
 ?>
 <div class="cars">
 <?php 
+$paged = (get_query_var('page')) ? (get_query_var('page')) : 1;
 $args = [
     'post_type' => 'car',
-    'post_per_page' => -1
+    'paged' => $paged,
+    'post_per_page' => 2
 ];
 
 $cars = new WP_Query($args); ?>
