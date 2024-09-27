@@ -1,13 +1,11 @@
 body {
-  color: red;
+  color: black;
+  font-size: medium;
 }
 .myclass{
   display: flex;
+  flex-direction: column;
+  gap: 10px;
 
 }
-/* .menu-menu-1-container{
-  display: flex;
-} */
-li{
-text-decoration: none;
-}
+
