@@ -7,6 +7,8 @@
  * @package Geniuscourses
  */
 
+ require get_template_directory() . '/inc/widget-about.php';
+
  function geniuscourses_widgets_init() {
 	register_sidebar(
 		array(
@@ -31,6 +33,7 @@
 			'after_title'   => '</h2>',
 		)
 	);
+	register_widget('Geniuscourses_About_Widget');
 }
 add_action( 'widgets_init', 'geniuscourses_widgets_init' );
 
@@ -217,6 +220,10 @@ if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
 }
+function disable_gutenberg_widgets() {
+	remove_theme_support('widgets-block-editor');
+}
+add_action('after_setup_theme', 'disable_gutenberg_widgets');
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -311,7 +318,7 @@ add_action( 'after_setup_theme', 'geniuscourses_content_width', 0 );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+// require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
