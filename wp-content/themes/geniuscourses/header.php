@@ -25,8 +25,6 @@
 
 
 <?php 
-if(is_tax('brand')){
-	echo "Header for Brand pages";
-} else{
-	echo "Simple hage";
-}
+ 
+ global $geniuscourses_options;
+ echo $geniuscourses_options['logo']['url'];
