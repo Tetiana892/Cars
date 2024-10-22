@@ -21,7 +21,7 @@ $cars = new WP_Query($args); ?>
 
         <?php get_template_part('partials/content', 'car'); ?>
 
-    <?php endwhile; else : ?>
+    <?php endwhile; geniuscourses_paginate($cars); else : ?>
         <?php get_template_part('partials/content', 'none'); ?>
     <?php endif; 
 
