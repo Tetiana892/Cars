@@ -54,6 +54,9 @@ if ( post_password_required() ) {
 				array(
 					'style'      => 'ol',
 					'short_ping' => true,
+					'avatar_size' => 100,
+				  'callback'  => 'geniuscourses_custom_comments',
+					'max_depth' => 3,
 				)
 			);
 			?>
@@ -71,7 +74,7 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+	comment_form(['label_submit'=>'Send']);
 	?>
 
 </div><!-- #comments -->
