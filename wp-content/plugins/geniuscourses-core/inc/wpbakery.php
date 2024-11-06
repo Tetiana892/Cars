@@ -36,7 +36,7 @@
       }
 
 public function render_shortcode($atts, $content, $tag): string {
-    // Шорткод Front
+    // shortcode Front
     $atts = shortcode_atts([
         'text' => '',
     ], $atts);
