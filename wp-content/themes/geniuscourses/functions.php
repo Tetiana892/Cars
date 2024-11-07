@@ -202,13 +202,7 @@ add_post_type_support( 'car', 'post-formats' );
 }
 add_action('after_setup_theme','geniuscourses_theme_init', 0);
 
-// завжди при реєстрації пост тайпу має бути цей хук, не буде проблем з 404 помилкою
-function geniuscourses_rewrite_rules(): void{
-	geniuscourses_register_post_type();
-	flush_rewrite_rules();
-}
 
-add_action('after_switch_theme', 'geniuscourses_rewrite_rules');
 
 
 function geniuscourses_content_width(): void {
@@ -267,3 +261,27 @@ if ( 'div' != $args['style'] ) : ?>
 		</div><?php 
 endif;
 }
+
+function gc_first_function(): void{
+	echo 'Hello Word<br>';
+}
+
+add_action( 'geniuscourses_our_hook', 'gc_first_function');
+
+function gc_second_function(): void{
+	echo "test<br>";
+}
+
+add_action( 'geniuscourses_our_hook', 'gc_second_function' );
+
+function gc_first_filter($name): string{
+	$name = 'Natali';
+	$name = 'My name is : ' . $name;
+	return $name;
+}
+
+add_filter( 'geniuscourses_first_filter', 'gc_first_filter' );
+
+//delete filter
+remove_filter( 'geniuscourses_first_filter', 'gc_first_filter' );
+// remove_action( 'init','geniuscourses_register_post_type' );

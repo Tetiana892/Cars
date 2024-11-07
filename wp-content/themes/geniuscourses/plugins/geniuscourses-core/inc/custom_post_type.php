@@ -111,3 +111,11 @@ function geniuscourses_register_post_type(){
 	
 }
 add_action('init','geniuscourses_register_post_type');
+
+// завжди при реєстрації пост тайпу має бути цей хук, не буде проблем з 404 помилкою
+function geniuscourses_rewrite_rules(): void{
+	geniuscourses_register_post_type();
+	flush_rewrite_rules();
+}
+
+add_action('after_switch_theme', 'geniuscourses_rewrite_rules');
