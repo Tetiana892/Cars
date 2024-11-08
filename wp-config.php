@@ -20,7 +20,7 @@
 
 // ** Параметры базы данных: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'genius' );
+define( 'DB_NAME', 'cars' );
 
 /** Имя пользователя базы данных */
 define( 'DB_USER', 'root' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '0mH,.1v3cqJ}Ejqp.;0>Pi _D$M^Ih*fc{_[6x;e[Dz)HjPkAOw|gTFjXg)s%^6^' );
-define( 'SECURE_AUTH_KEY',  'jZ:(%,(K]10,H[>Mo- uS62_a*{ 7x>DS4p{Bd2uH^y0W|5n|/8hgeqbK,^NH_+k' );
-define( 'LOGGED_IN_KEY',    '/=.5xFGJ-=9-|SU6soY0]a;N-k!oO%/>e$8F|}!eNw93!Jp3v>YKc_7Q4<!L993v' );
-define( 'NONCE_KEY',        'v0eiw^Kg(=`ci|lB 8O7]c4;kVTdZ9KQLFd#lhSB#L1>9F)5s#M)1N=F$p#U)tSb' );
-define( 'AUTH_SALT',        '=!CpuvgfEytkHU#PQ7m$SJPqMj%9IO8LH+{50NiivyR<=pd:Yq:2f>ePN9Gl^mhy' );
-define( 'SECURE_AUTH_SALT', 'h3*v9z|{u62U2Zju|WAs/U%c%I6Rpf&ZI-{xl`lkd}k=V:Mf|Q!^Y9!K<,Sa*k$C' );
-define( 'LOGGED_IN_SALT',   'jQzK}55Cdwk|{1Z}5]Z:_O>96Ws> yi30I.BsCtxg>H^>Hf~P^E=0$fwF0MqZ!QZ' );
-define( 'NONCE_SALT',       'atuO$P_wB*gH}K4Q^sXc*Ky}{`:#?K:[,VD/oG09M_ $$1(=JT_+);U^bPY[=G^c' );
+define( 'AUTH_KEY',         '7LzziK2?&jmL@g=NxM`O__O}b1l#-^3xK`- QA:pLURh`$ 5CoLcznhmA725=)4u' );
+define( 'SECURE_AUTH_KEY',  'IZ8XRfwWCRAS2vj+j;i}-]^W=1JZ}952lKQ}<GN&|y*ObjPA*Y]Bs=LS_K?TH!su' );
+define( 'LOGGED_IN_KEY',    '*0^]:o46fcu?TSai713vlb2Y?[.->gQ9V,t}i]Z1^l{AwfvW.=&3j}@Z:&]0{kbC' );
+define( 'NONCE_KEY',        '21F{A*gWP-c?S}i#HxbY,ME]7;H}tCItg>aMR%BRX^}WK~M#v(*eI^[;va4ktjAy' );
+define( 'AUTH_SALT',        '.Tm,xifRF7foYEP|;`GoUeoCp#OPqo%47]S!/L>~cN=>_t# Qli%4sC|B%PH|>5y' );
+define( 'SECURE_AUTH_SALT', '.?XDJz<5wLwy[(6?IKJwR88Ron*QVy]@fhTNl]I4?j7.<^%r S[| ]AYWzX Fy}C' );
+define( 'LOGGED_IN_SALT',   'AwPBSWs)_:FMqWM] K(eDZ4T|B96~z]s;Z%W^E^yHNQ,]|njjMFBO8iZLpAiY}z(' );
+define( 'NONCE_SALT',       'JG?kM~KB:<HZ|EfM9Q:bRU)4jLZczbdWFx#K]_~gi/!nE8EX)&SZv?,)R04G0a [' );
 
 /**#@-*/
 
@@ -65,7 +65,7 @@ define( 'NONCE_SALT',       'atuO$P_wB*gH}K4Q^sXc*Ky}{`:#?K:[,VD/oG09M_ $$1(=JT_
  * Можно установить несколько сайтов в одну базу данных, если использовать
  * разные префиксы. Пожалуйста, указывайте только цифры, буквы и знак подчеркивания.
  */
-$table_prefix = 'geni_';
+$table_prefix = 'wp_';
 
 /**
  * Для разработчиков: Режим отладки WordPress.
@@ -78,7 +78,7 @@ $table_prefix = 'geni_';
  *
  * @link https://ru.wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', false );
 
 /* Произвольные значения добавляйте между этой строкой и надписью "дальше не редактируем". */
 
