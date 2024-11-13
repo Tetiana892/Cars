@@ -93,7 +93,7 @@ protected function render(): void {
                 foreach ( $settings['slider'] as $item ) { 
                   $active_class = $first_item ? ' active' : '';
                   $first_item = false;
-          ?>
+              ?>
                   <div class="carousel-item<?php echo $active_class; ?>">
                       <?php if ($item['image']['url']) { ?>
                           <img class="w-100" src="<?php echo esc_url($item['image']['url']); ?>" alt="Image">

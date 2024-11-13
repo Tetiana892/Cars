@@ -94,11 +94,13 @@ final class Elementor_Test_Extension {
       require_once(__DIR__ . '/widgets/ads-widget.php');
       require_once(__DIR__ . '/widgets/slider-widget.php');
       require_once(__DIR__ . '/widgets/team-widget.php');
+      require_once(__DIR__ . '/widgets/servis-widget.php');
 
       \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_About_Widget());
       \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_Ads_Widget());
       \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_Slider_Widget());
       \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_Team_Widget());
+      \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_Servis_Widget());
      }
 
 }
