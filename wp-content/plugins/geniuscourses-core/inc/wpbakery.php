@@ -8,9 +8,7 @@
 
       public function create_shortcode(): void {
           // admin field for WPBakery
-          if(!defined('WPB_VC_VERSION')){
-            return;
-          }
+
           if (function_exists('vc_map')){
           vc_map(array(
           'name' => "GS About",

@@ -3,7 +3,7 @@
 class Geniuscourses_About_Widget extends WP_Widget {
   function __construct(){
     parent::__construct('geniuscourses_about_widget', esc_html__( 'About Widget', 'geniuscourses' ), [
-      'description' => esc_html( 'Our First Widget', 'geniuscourses' )
+      'description' => esc_html__( 'Our First Widget', 'geniuscourses' )
     ]);
   }
 
@@ -28,7 +28,7 @@ class Geniuscourses_About_Widget extends WP_Widget {
     echo $after_widget;
   }
 
-  public function form($instance){
+  public function form($instance): void{
     // Backend form
     $title = isset($instance['title']) ? $instance['title'] : '';
     $text = isset($instance['text']) ? $instance['text'] : '';
