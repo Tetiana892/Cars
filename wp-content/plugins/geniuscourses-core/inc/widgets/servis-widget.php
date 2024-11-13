@@ -10,11 +10,11 @@ class Elementor_Servis_Widget extends \Elementor\Widget_Base {
   }
 
   public function get_icon() {
-    return 'eicon-post-slider';
+    return 'eicon-handle';
   }
 
   public function get_categories(): array {
-    return [ 'general' ];
+    return [ 'custom_category' ];
   }
 
   public function get_keywords(): array {

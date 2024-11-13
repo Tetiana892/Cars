@@ -88,7 +88,19 @@ final class Elementor_Test_Extension {
 
     public function init(): void {
         add_action( 'elementor/widgets/register', [ $this, 'init_widgets' ] );
+        add_action('elementor/elements/categories_registered', [ $this, 'add_widget_categories' ]);
     }
+
+    public function add_widget_categories($elements_manager): void {
+        $elements_manager->add_category(
+            'custom_category',
+            [
+                'title' => __('Custom Widgets', 'textdomain'),
+                'icon' => 'fa fa-plug',
+            ]
+        );
+    }    
+    
      public function init_widgets(){
       require_once(__DIR__ . '/widgets/about-widget.php');
       require_once(__DIR__ . '/widgets/ads-widget.php');
@@ -96,11 +108,13 @@ final class Elementor_Test_Extension {
       require_once(__DIR__ . '/widgets/team-widget.php');
       require_once(__DIR__ . '/widgets/servis-widget.php');
 
-      \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_About_Widget());
-      \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_Ads_Widget());
-      \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_Slider_Widget());
-      \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_Team_Widget());
-      \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_Servis_Widget());
+    $widgets_manager = \Elementor\Plugin::instance()->widgets_manager;
+
+    $widgets_manager->register(new \Elementor_About_Widget());
+    $widgets_manager->register(new \Elementor_Ads_Widget());
+    $widgets_manager->register(new \Elementor_Slider_Widget());
+    $widgets_manager->register(new \Elementor_Team_Widget());
+    $widgets_manager->register(new \Elementor_Servis_Widget());
      }
 
 }

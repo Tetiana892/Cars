@@ -14,7 +14,7 @@ public function get_icon() {
 }
 
 public function get_categories(): array {
-  return [ 'general' ];
+  return [ 'custom_category' ];
 }
 
 public function get_keywords(): array {
