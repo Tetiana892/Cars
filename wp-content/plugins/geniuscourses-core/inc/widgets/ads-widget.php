@@ -9,7 +9,7 @@ public function get_title(): string{
   return esc_html__( 'Geniuscourses Ads', 'geniuscourses-core' );
 }
 
-public function get_icon() {
+public function get_icon(): string {
   return 'eicon-star';
 }
 

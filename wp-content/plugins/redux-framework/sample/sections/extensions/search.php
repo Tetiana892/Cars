@@ -13,9 +13,9 @@ defined( 'ABSPATH' ) || exit;
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Live Search', 'your-textdomain-here' ),
-		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-extensions/live-search.html" target="_blank">https://devs.redux.io/extensions/live-search.html</a>',
-		'heading'    => esc_html__( 'Try the search box at the top right of every panel or metabox section. It will dynamically filter out the visible fields to match your search.', 'your-textdomain-here' ),
+		'title'      => esc_html__( 'Live Search', 'geniuscourses' ),
+		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'geniuscourses' ) . '<a href="https://devs.redux.io/core-extensions/live-search.html" target="_blank">https://devs.redux.io/extensions/live-search.html</a>',
+		'heading'    => esc_html__( 'Try the search box at the top right of every panel or metabox section. It will dynamically filter out the visible fields to match your search.', 'geniuscourses' ),
 		'customizer' => false,
 		'subsection' => true,
 	)

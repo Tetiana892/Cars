@@ -1,6 +1,15 @@
 <?php
 class Elementor_Slider_Widget extends \Elementor\Widget_Base {
 
+  public function get_script_depends(): array{ 
+    if(\Elementor\Plugin::$instance->preview->is_preview_mode()){
+      wp_register_script('gc-slider', plugins_url('/js/gc-slider.js', __FILE__),
+       ['elementor-frontend'], '1.0', true);
+      return ['gc-slider'];
+    }
+    return [];
+  }
+
 public function get_name(): string {
   return 'geniuscourses_slider';
 }
@@ -9,7 +18,7 @@ public function get_title(): string{
   return esc_html__( 'Geniuscourses Slider', 'geniuscourses-core' );
 }
 
-public function get_icon() {
+public function get_icon(): string {
   return 'eicon-post-slider';
 }
 

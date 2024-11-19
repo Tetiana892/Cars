@@ -11,16 +11,16 @@ defined( 'ABSPATH' ) || exit;
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'  => esc_html__( 'Typography', 'your-textdomain-here' ),
+		'title'  => esc_html__( 'Typography', 'geniuscourses' ),
 		'id'     => 'typography',
-		'desc'   => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/typography.html" target="_blank">https://devs.redux.io/core-fields/typography.html</a>',
+		'desc'   => esc_html__( 'For full documentation on this field, visit: ', 'geniuscourses' ) . '<a href="https://devs.redux.io/core-fields/typography.html" target="_blank">https://devs.redux.io/core-fields/typography.html</a>',
 		'icon'   => 'el el-font',
 		'fields' => array(
 			array(
 				'id'                => 'opt-typography-body',
 				'type'              => 'typography',
-				'title'             => esc_html__( 'Body Font', 'your-textdomain-here' ),
-				'subtitle'          => esc_html__( 'Specify the body font properties.', 'your-textdomain-here' ),
+				'title'             => esc_html__( 'Body Font', 'geniuscourses' ),
+				'subtitle'          => esc_html__( 'Specify the body font properties.', 'geniuscourses' ),
 				'google'            => true,
 				'font_family_clear' => false,
 				'default'           => array(
@@ -34,7 +34,7 @@ Redux::set_section(
 			array(
 				'id'          => 'opt-typography',
 				'type'        => 'typography',
-				'title'       => esc_html__( 'Typography Site Description', 'your-textdomain-here' ),
+				'title'       => esc_html__( 'Typography Site Description', 'geniuscourses' ),
 
 				// Use if you want to hook in your own CSS compiler.
 				'compiler'    => true,
@@ -46,7 +46,7 @@ Redux::set_section(
 				'all-styles'  => true,
 				'all-subsets' => true,
 				'units'       => 'px',
-				'subtitle'    => esc_html__( 'Typography option with each property can be called individually.', 'your-textdomain-here' ),
+				'subtitle'    => esc_html__( 'Typography option with each property can be called individually.', 'geniuscourses' ),
 				'default'     => array(
 					'color'       => '#333',
 					'font-style'  => '700',
@@ -90,8 +90,8 @@ Redux::set_section(
 			array(
 				'id'                => 'opt-typography-body-shadow',
 				'type'              => 'typography',
-				'title'             => esc_html__( 'Title Font', 'your-textdomain-here' ),
-				'subtitle'          => esc_html__( 'Specify the body font properties.', 'your-textdomain-here' ),
+				'title'             => esc_html__( 'Title Font', 'geniuscourses' ),
+				'subtitle'          => esc_html__( 'Specify the body font properties.', 'geniuscourses' ),
 				'google'            => true,
 				'font_family_clear' => false,
 				'text-shadow'       => true,

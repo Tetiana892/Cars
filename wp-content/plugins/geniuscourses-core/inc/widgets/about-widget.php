@@ -5,8 +5,8 @@ public function get_name(): string {
   return 'geniuscourses_about';
 }
 
-public function get_title(){
-  return esc_html__( 'Geniuscoures About', 'geniuscourses-core' );
+public function get_title(): string{
+  return esc_html__( 'Geniuscourses About', 'geniuscourses-core' );
 }
 
 public function get_icon() {

@@ -17,8 +17,8 @@ require_once Redux_Core::$dir . 'inc/extensions/icon_select/font-awesome-5-free.
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Icon Select', 'your-textdomain-here' ),
-		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-extensions/icon-select.html" target="_blank">https://devs.redux.io/core-extensions/icon-select.html</a>',
+		'title'      => esc_html__( 'Icon Select', 'geniuscourses' ),
+		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'geniuscourses' ) . '<a href="https://devs.redux.io/core-extensions/icon-select.html" target="_blank">https://devs.redux.io/core-extensions/icon-select.html</a>',
 		'subsection' => true,
 		'fields'     => array(
 
@@ -31,8 +31,8 @@ Redux::set_section(
 			array(
 				'id'               => 'icon-select-legacy',
 				'type'             => 'icon_select',
-				'title'            => esc_html__( 'Legacy Icon Select', 'your-textdomain-here' ),
-				'subtitle'         => esc_html__( 'Original Icon Select field that maintains backward compatibility with the original extension.', 'your-textdomain-here' ),
+				'title'            => esc_html__( 'Legacy Icon Select', 'geniuscourses' ),
+				'subtitle'         => esc_html__( 'Original Icon Select field that maintains backward compatibility with the original extension.', 'geniuscourses' ),
 				'default'          => '',
 				'options'          => redux_icon_select_fa_5_free(),
 
@@ -56,8 +56,8 @@ Redux::set_section(
 			array(
 				'id'               => 'icon-select',
 				'type'             => 'icon_select',
-				'title'            => esc_html__( 'Icon Select', 'your-textdomain-here' ),
-				'subtitle'         => esc_html__( 'Select an icon.', 'your-textdomain-here' ),
+				'title'            => esc_html__( 'Icon Select', 'geniuscourses' ),
+				'subtitle'         => esc_html__( 'Select an icon.', 'geniuscourses' ),
 				'default'          => 'fas fa-1',
 
 				// Disable auto-enqueue of stylesheet if present in the panel.

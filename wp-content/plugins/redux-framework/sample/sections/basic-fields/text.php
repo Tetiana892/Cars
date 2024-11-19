@@ -11,8 +11,8 @@ defined( 'ABSPATH' ) || exit;
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Text', 'your-textdomain-here' ),
-		'desc'             => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/text.html" target="_blank">https://devs.redux.io/core-fields/text.html</a>',
+		'title'            => esc_html__( 'Text', 'geniuscourses' ),
+		'desc'             => esc_html__( 'For full documentation on this field, visit: ', 'geniuscourses' ) . '<a href="https://devs.redux.io/core-fields/text.html" target="_blank">https://devs.redux.io/core-fields/text.html</a>',
 		'id'               => 'basic-text',
 		'subsection'       => true,
 		'customizer_width' => '700px',
@@ -20,17 +20,17 @@ Redux::set_section(
 			array(
 				'id'       => 'text-example',
 				'type'     => 'text',
-				'title'    => esc_html__( 'Text Field', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'Subtitle', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+				'title'    => esc_html__( 'Text Field', 'geniuscourses' ),
+				'subtitle' => esc_html__( 'Subtitle', 'geniuscourses' ),
+				'desc'     => esc_html__( 'Field Description', 'geniuscourses' ),
 				'default'  => 'Default Text',
 			),
 			array(
 				'id'       => 'text-example-hint',
 				'type'     => 'text',
-				'title'    => esc_html__( 'Text Field w/ Hint', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'Subtitle', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'Field Description', 'your-textdomain-here' ),
+				'title'    => esc_html__( 'Text Field w/ Hint', 'geniuscourses' ),
+				'subtitle' => esc_html__( 'Subtitle', 'geniuscourses' ),
+				'desc'     => esc_html__( 'Field Description', 'geniuscourses' ),
 				'default'  => 'Default Text',
 				'hint'     => array(
 					'title'   => 'Hint Title',
@@ -40,9 +40,9 @@ Redux::set_section(
 			array(
 				'id'          => 'text-placeholder',
 				'type'        => 'text',
-				'title'       => esc_html__( 'Text Field w/ placeholder using custom data object.', 'your-textdomain-here' ),
-				'subtitle'    => esc_html__( 'Subtitle', 'your-textdomain-here' ),
-				'desc'        => esc_html__( 'Field Description', 'your-textdomain-here' ),
+				'title'       => esc_html__( 'Text Field w/ placeholder using custom data object.', 'geniuscourses' ),
+				'subtitle'    => esc_html__( 'Subtitle', 'geniuscourses' ),
+				'desc'        => esc_html__( 'Field Description', 'geniuscourses' ),
 				'placeholder' => array(
 					'box1' => 'Box One Placeholder',
 					'box2' => 'Box Two Placeholder',

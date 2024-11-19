@@ -12,16 +12,16 @@ defined( 'ABSPATH' ) || exit;
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'      => esc_html__( 'Color Schemes', 'your-textdomain-here' ),
-		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-extensions/color-schemes.html" target="_blank">https://devs.redux.io/core-extensions/color-schemes.html</a>',
+		'title'      => esc_html__( 'Color Schemes', 'geniuscourses' ),
+		'desc'       => esc_html__( 'For full documentation on this field, visit: ', 'geniuscourses' ) . '<a href="https://devs.redux.io/core-extensions/color-schemes.html" target="_blank">https://devs.redux.io/core-extensions/color-schemes.html</a>',
 		'subsection' => true,
 		'fields'     => array(
 			array(
 				'id'       => 'opt-color-scheme',
 				'type'     => 'color_scheme',
-				'title'    => esc_html__( 'Color Schemes', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'Save and load color schemes', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'If you\'re using the theme 2023, you will be able to see many changes on the current site.', 'your-textdomain-here' ),
+				'title'    => esc_html__( 'Color Schemes', 'geniuscourses' ),
+				'subtitle' => esc_html__( 'Save and load color schemes', 'geniuscourses' ),
+				'desc'     => esc_html__( 'If you\'re using the theme 2023, you will be able to see many changes on the current site.', 'geniuscourses' ),
 				'output'   => true,
 				'compiler' => true,
 				'simple'   => false,
@@ -42,14 +42,14 @@ Redux::set_section(
 					'palette'                => null,  // show default.
 				),
 				'groups'   => array(
-					esc_html__( 'Header', 'your-textdomain-here' ) => array(
-						'desc'           => esc_html__( 'Set header and nav colors here. (Group open by default)', 'your-textdomain-here' ),
+					esc_html__( 'Header', 'geniuscourses' ) => array(
+						'desc'           => esc_html__( 'Set header and nav colors here. (Group open by default)', 'geniuscourses' ),
 						'hidden'         => false,
 						'accordion_open' => true,
 					),
-					esc_html__( 'Body', 'your-textdomain-here' ) => esc_html__( 'Set body and content colors here.', 'your-textdomain-here' ),
-					esc_html__( 'Widget', 'your-textdomain-here' ) => '',
-					'' => esc_html__( 'These colors are not assigned to any group.', 'your-textdomain-here' ),
+					esc_html__( 'Body', 'geniuscourses' ) => esc_html__( 'Set body and content colors here.', 'geniuscourses' ),
+					esc_html__( 'Widget', 'geniuscourses' ) => '',
+					'' => esc_html__( 'These colors are not assigned to any group.', 'geniuscourses' ),
 				),
 				'default'  => array(
 					array(
@@ -63,7 +63,7 @@ Redux::set_section(
 						),
 						'mode'      => 'background-color',
 						'important' => true,
-						'group'     => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'     => esc_html__( 'Header', 'geniuscourses' ),
 					),
 					array(
 						'id'        => 'site-header-border',
@@ -73,7 +73,7 @@ Redux::set_section(
 						'selector'  => '.site-header,header',
 						'mode'      => 'border-color',
 						'important' => true,
-						'group'     => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'     => esc_html__( 'Header', 'geniuscourses' ),
 					),
 					array(
 						'id'        => 'home-link',     // ID.
@@ -83,7 +83,7 @@ Redux::set_section(
 						'selector'  => '.home-link,.wp-block-site-title a',    // CSS selector.
 						'mode'      => 'color',         // CSS mode.
 						'important' => true,            // CSS important.
-						'group'     => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'     => esc_html__( 'Header', 'geniuscourses' ),
 					),
 					array(
 						'id'        => 'site-description',
@@ -93,7 +93,7 @@ Redux::set_section(
 						'selector'  => 'h2.site-description,.wp-block-site-tagline',
 						'mode'      => 'color',
 						'important' => true,
-						'group'     => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'     => esc_html__( 'Header', 'geniuscourses' ),
 					),
 					array(
 						'id'       => 'navbar',
@@ -102,7 +102,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.navbar,.wp-block-navigation',
 						'mode'     => 'background-color',
-						'group'    => esc_html__( 'Header', 'your-textdomain-here' ),
+						'group'    => esc_html__( 'Header', 'geniuscourses' ),
 
 					),
 					array(
@@ -112,7 +112,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => 'body p',
 						'mode'     => 'color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__( 'Body', 'geniuscourses' ),
 					),
 					array(
 						'id'       => 'site-content',
@@ -121,7 +121,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.site-content',
 						'mode'     => 'background-color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__( 'Body', 'geniuscourses' ),
 					),
 					array(
 						'id'       => 'entry-content',
@@ -130,7 +130,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.entry-content',
 						'mode'     => 'background-color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__( 'Body', 'geniuscourses' ),
 					),
 					array(
 						'id'       => 'entry-title',
@@ -139,7 +139,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.entry-title a',
 						'mode'     => 'color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__( 'Body', 'geniuscourses' ),
 					),
 					array(
 						'id'       => 'entry-title-hover',
@@ -148,7 +148,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.entry-title a:hover',
 						'mode'     => 'color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__( 'Body', 'geniuscourses' ),
 					),
 					array(
 						'id'       => 'entry-meta',
@@ -157,7 +157,7 @@ Redux::set_section(
 						'alpha'    => 1,
 						'selector' => '.entry-meta a',
 						'mode'     => 'color',
-						'group'    => esc_html__( 'Body', 'your-textdomain-here' ),
+						'group'    => esc_html__( 'Body', 'geniuscourses' ),
 					),
 					array(
 						'id'       => 'widget-container',
@@ -166,7 +166,7 @@ Redux::set_section(
 						'alpha'    => .5,
 						'selector' => '.widget',
 						'mode'     => 'background-color',
-						'group'    => esc_html__( 'Widget', 'your-textdomain-here' ),
+						'group'    => esc_html__( 'Widget', 'geniuscourses' ),
 					),
 					array(
 						'id'        => 'widget-title',
@@ -176,7 +176,7 @@ Redux::set_section(
 						'selector'  => '.widget-title',
 						'mode'      => 'color',
 						'important' => true,
-						'group'     => esc_html__( 'Widget', 'your-textdomain-here' ),
+						'group'     => esc_html__( 'Widget', 'geniuscourses' ),
 					),
 					array(
 						'id'        => 'widget-text',
@@ -186,7 +186,7 @@ Redux::set_section(
 						'selector'  => '.widget a',
 						'mode'      => 'color',
 						'important' => true,
-						'group'     => esc_html__( 'Widget', 'your-textdomain-here' ),
+						'group'     => esc_html__( 'Widget', 'geniuscourses' ),
 					),
 					array(
 						'id'        => 'sidebar-container',

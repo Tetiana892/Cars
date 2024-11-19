@@ -1,7 +1,7 @@
 <?php
 class Elementor_Team_Widget extends \Elementor\Widget_Base {
 
-  public function get_script_depends(){
+  public function get_script_depends(): array{   
     if(\Elementor\Plugin::$instance->preview->is_preview_mode()){
       wp_register_script('gc-team', plugins_url('/js/gc-team.js', __FILE__),
        ['elementor-frontend'], '1.0', true);
@@ -18,7 +18,7 @@ public function get_title(): string{
   return esc_html__( 'Geniuscourses Team', 'geniuscourses-core' );
 }
 
-public function get_icon() {
+public function get_icon(): string {
   return 'eicon-lock-user';
 }
 
@@ -97,7 +97,6 @@ protected function render(): void {
             <h1 class="display-1 text-primary text-center">04</h1>
             <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
             <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-
             <?php 
               if ( $settings['slider'] ) {
                 $first_item = true;
@@ -124,9 +123,6 @@ protected function render(): void {
             </div>
         </div>
     </div>
-            
-
-
 <?php 
 }
 

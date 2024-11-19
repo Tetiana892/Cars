@@ -16,10 +16,16 @@ function geniuscourses_acf_metaboxes() {
         'name' => 'custom_engine_type',
         'type' => 'select',
         'choices'=>[
-          'manual' => esc_html__( ('Manual'), 'geniuscourses' ),
+          'manual' => esc_html__( 'Manual', 'geniuscourses' ),
           'automatic' =>'Automatic'
         ],
         'allow_null' => 1
+      ],
+      [
+        'key' => 'custom_mileage', 
+        'label' => 'Car Mileage',
+        'name' => 'custom_mileage',
+        'type' => 'text',
       ],
     ],
     'location' => [

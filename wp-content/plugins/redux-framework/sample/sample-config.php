@@ -86,10 +86,10 @@ $args = array(
 	'allow_sub_menu'            => true,
 
 	// The text to appear in the admin menu.
-	'menu_title'                => esc_html__( 'Sample Options', 'your-textdomain-here' ),
+	'menu_title'                => esc_html__( 'Sample Options', 'geniuscourses' ),
 
 	// The text to appear on the page title.
-	'page_title'                => esc_html__( 'Sample Options', 'your-textdomain-here' ),
+	'page_title'                => esc_html__( 'Sample Options', 'geniuscourses' ),
 
 	// Disable to create your own Google fonts loader.
 	'disable_google_fonts_link' => false,
@@ -222,13 +222,13 @@ $args = array(
 $args['admin_bar_links'][] = array(
 	'id'    => 'redux-docs',
 	'href'  => '//devs.redux.io/',
-	'title' => __( 'Documentation', 'your-textdomain-here' ),
+	'title' => __( 'Documentation', 'geniuscourses' ),
 );
 
 $args['admin_bar_links'][] = array(
 	'id'    => 'redux-support',
 	'href'  => '//github.com/ReduxFramework/redux-framework/issues',
-	'title' => __( 'Support', 'your-textdomain-here' ),
+	'title' => __( 'Support', 'geniuscourses' ),
 );
 
 // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
@@ -264,13 +264,13 @@ if ( ! isset( $args['global_variable'] ) || false !== $args['global_variable'] )
 	}
 
 	// translators:  Panel opt_name.
-	$args['intro_text'] = '<p>' . sprintf( esc_html__( 'Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: $%1$s', 'your-textdomain-here' ), '<strong>' . $v . '</strong>' ) . '<p>';
+	$args['intro_text'] = '<p>' . sprintf( esc_html__( 'Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: $%1$s', 'geniuscourses' ), '<strong>' . $v . '</strong>' ) . '<p>';
 } else {
-	$args['intro_text'] = '<p>' . esc_html__( 'This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.', 'your-textdomain-here' ) . '</p>';
+	$args['intro_text'] = '<p>' . esc_html__( 'This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.', 'geniuscourses' ) . '</p>';
 }
 
 // Add content after the form.
-$args['footer_text'] = '<p>' . esc_html__( 'This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.', 'your-textdomain-here' ) . '</p>';
+$args['footer_text'] = '<p>' . esc_html__( 'This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.', 'geniuscourses' ) . '</p>';
 
 Redux::set_args( $opt_name, $args );
 
@@ -284,19 +284,19 @@ Redux::set_args( $opt_name, $args );
 $help_tabs = array(
 	array(
 		'id'      => 'redux-help-tab-1',
-		'title'   => esc_html__( 'Theme Information 1', 'your-textdomain-here' ),
-		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
+		'title'   => esc_html__( 'Theme Information 1', 'geniuscourses' ),
+		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'geniuscourses' ) . '</p>',
 	),
 	array(
 		'id'      => 'redux-help-tab-2',
-		'title'   => esc_html__( 'Theme Information 2', 'your-textdomain-here' ),
-		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
+		'title'   => esc_html__( 'Theme Information 2', 'geniuscourses' ),
+		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'geniuscourses' ) . '</p>',
 	),
 );
 Redux::set_help_tab( $opt_name, $help_tabs );
 
 // Set the help sidebar.
-$content = '<p>' . esc_html__( 'This is the sidebar content, HTML is allowed.', 'your-textdomain-here' ) . '</p>';
+$content = '<p>' . esc_html__( 'This is the sidebar content, HTML is allowed.', 'geniuscourses' ) . '</p>';
 
 Redux::set_help_sidebar( $opt_name, $content );
 
@@ -312,9 +312,9 @@ Redux::set_help_sidebar( $opt_name, $content );
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Basic Fields', 'your-textdomain-here' ),
+		'title'            => esc_html__( 'Basic Fields', 'geniuscourses' ),
 		'id'               => 'basic',
-		'desc'             => esc_html__( 'These are really basic fields!', 'your-textdomain-here' ),
+		'desc'             => esc_html__( 'These are really basic fields!', 'geniuscourses' ),
 		'customizer_width' => '400px',
 		'icon'             => 'el el-home',
 	)
@@ -332,7 +332,7 @@ require_once Redux_Core::$dir . '../sample/sections/basic-fields/textarea.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Editors', 'your-textdomain-here' ),
+		'title'            => esc_html__( 'Editors', 'geniuscourses' ),
 		'id'               => 'editor',
 		'customizer_width' => '500px',
 		'icon'             => 'el el-edit',
@@ -346,7 +346,7 @@ require_once Redux_Core::$dir . '../sample/sections/editors/ace-editor.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Color Selection', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Color Selection', 'geniuscourses' ),
 		'id'    => 'color',
 		'icon'  => 'el el-brush',
 	)
@@ -363,7 +363,7 @@ require_once Redux_Core::$dir . '../sample/sections/color-selection/color-palett
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Design Fields', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Design Fields', 'geniuscourses' ),
 		'id'    => 'design',
 		'icon'  => 'el el-wrench',
 	)
@@ -379,7 +379,7 @@ require_once Redux_Core::$dir . '../sample/sections/design-fields/spacing.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Media Uploads', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Media Uploads', 'geniuscourses' ),
 		'id'    => 'media',
 		'icon'  => 'el el-picture',
 	)
@@ -394,7 +394,7 @@ require_once Redux_Core::$dir . '../sample/sections/media-uploads/slides.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Presentation Fields', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Presentation Fields', 'geniuscourses' ),
 		'id'    => 'presentation',
 		'icon'  => 'el el-screen',
 	)
@@ -417,7 +417,7 @@ Redux::set_section(
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Switch / Button Set', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Switch / Button Set', 'geniuscourses' ),
 		'id'    => 'switch_buttonset',
 		'icon'  => 'el el-cogs',
 	)
@@ -430,7 +430,7 @@ require_once Redux_Core::$dir . '../sample/sections/switch-button/switch.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Select Fields', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Select Fields', 'geniuscourses' ),
 		'id'    => 'select',
 		'icon'  => 'el el-list-alt',
 	)
@@ -444,7 +444,7 @@ require_once Redux_Core::$dir . '../sample/sections/select-fields/select-image.p
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Slider / Spinner', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Slider / Spinner', 'geniuscourses' ),
 		'id'    => 'slider_spinner',
 		'icon'  => 'el el-adjust-alt',
 	)
@@ -460,7 +460,7 @@ require_once Redux_Core::$dir . '../sample/sections/typography/typography.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Additional Types', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Additional Types', 'geniuscourses' ),
 		'id'    => 'additional',
 		'icon'  => 'el el-magic',
 	)
@@ -474,7 +474,7 @@ require_once Redux_Core::$dir . '../sample/sections/additional-types/raw.php';
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Advanced Features', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Advanced Features', 'geniuscourses' ),
 		'icon'  => 'el el-thumbs-up',
 	)
 );
@@ -496,7 +496,7 @@ require_once Redux_Core::$dir . '../sample/sections/advanced-features/wpml-integ
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Disabling', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Disabling', 'geniuscourses' ),
 		'icon'  => 'el el-lock',
 	)
 );
@@ -508,11 +508,11 @@ require_once Redux_Core::$dir . '../sample/sections/disabling/disable-section.ph
 Redux::set_section(
 	$opt_name,
 	array(
-		'title' => esc_html__( 'Redux Extensions', 'your-textdomain-here' ),
+		'title' => esc_html__( 'Redux Extensions', 'geniuscourses' ),
 		'id'    => 'redux-extensions',
 		'icon'  => 'el el-redux',
 		'class' => 'pro_highlight',
-		'desc'  => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-extensions/" target="_blank">https://devs.redux.io/core-extensions/</a>',
+		'desc'  => esc_html__( 'For full documentation on this field, visit: ', 'geniuscourses' ) . '<a href="https://devs.redux.io/core-extensions/" target="_blank">https://devs.redux.io/core-extensions/</a>',
 	)
 );
 
@@ -542,7 +542,7 @@ require_once Redux_Core::$dir . '../sample/metaboxes.php';
 if ( file_exists( $dir . '/../README.md' ) ) {
 	$section = array(
 		'icon'   => 'el el-list-alt',
-		'title'  => esc_html__( 'Documentation', 'your-textdomain-here' ),
+		'title'  => esc_html__( 'Documentation', 'geniuscourses' ),
 		'fields' => array(
 			array(
 				'id'           => 'opt-raw-documentation',
@@ -560,21 +560,21 @@ Redux::set_section(
 	$opt_name,
 	array(
 		'icon'            => 'el el-list-alt',
-		'title'           => esc_html__( 'Customizer Only', 'your-textdomain-here' ),
-		'desc'            => '<p class="description">' . esc_html__( 'This Section should be visible only in Customizer', 'your-textdomain-here' ) . '</p>',
+		'title'           => esc_html__( 'Customizer Only', 'geniuscourses' ),
+		'desc'            => '<p class="description">' . esc_html__( 'This Section should be visible only in Customizer', 'geniuscourses' ) . '</p>',
 		'customizer_only' => true,
 		'fields'          => array(
 			array(
 				'id'              => 'opt-customizer-only',
 				'type'            => 'select',
-				'title'           => esc_html__( 'Customizer Only Option', 'your-textdomain-here' ),
-				'subtitle'        => esc_html__( 'The subtitle is NOT visible in customizer', 'your-textdomain-here' ),
-				'desc'            => esc_html__( 'The field desc is NOT visible in customizer.', 'your-textdomain-here' ),
+				'title'           => esc_html__( 'Customizer Only Option', 'geniuscourses' ),
+				'subtitle'        => esc_html__( 'The subtitle is NOT visible in customizer', 'geniuscourses' ),
+				'desc'            => esc_html__( 'The field desc is NOT visible in customizer.', 'geniuscourses' ),
 				'customizer_only' => true,
 				'options'         => array(
-					'1' => esc_html__( 'Opt 1', 'your-textdomain-here' ),
-					'2' => esc_html__( 'Opt 2', 'your-textdomain-here' ),
-					'3' => esc_html__( 'Opt 3', 'your-textdomain-here' ),
+					'1' => esc_html__( 'Opt 1', 'geniuscourses' ),
+					'2' => esc_html__( 'Opt 2', 'geniuscourses' ),
+					'3' => esc_html__( 'Opt 3', 'geniuscourses' ),
 				),
 				'default'         => '2',
 			),
@@ -684,8 +684,8 @@ if ( ! function_exists( 'dynamic_section' ) ) {
 	 */
 	function dynamic_section( array $sections ): array {
 		$sections[] = array(
-			'title'  => esc_html__( 'Section via hook', 'your-textdomain-here' ),
-			'desc'   => '<p class="description">' . esc_html__( 'This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.', 'your-textdomain-here' ) . '</p>',
+			'title'  => esc_html__( 'Section via hook', 'geniuscourses' ),
+			'desc'   => '<p class="description">' . esc_html__( 'This is a section created by adding a filter to the sections array. Can be used by child themes to add/remove sections from the options.', 'geniuscourses' ) . '</p>',
 			'icon'   => 'el el-paper-clip',
 
 			// Leave this as a blank section, no options just some intro text set above.
@@ -722,7 +722,7 @@ if ( ! function_exists( 'change_defaults' ) ) {
 	 * @return array
 	 */
 	function change_defaults( array $defaults ): array {
-		$defaults['str_replace'] = esc_html__( 'Testing filter hook!', 'your-textdomain-here' );
+		$defaults['str_replace'] = esc_html__( 'Testing filter hook!', 'geniuscourses' );
 
 		return $defaults;
 	}

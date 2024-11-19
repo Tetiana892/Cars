@@ -19,13 +19,6 @@ final class Elementor_Test_Extension {
         }
     }
 
-    public function on_plugins_loaded(){
-        if($this->is_compatible()){
-            add_action('elementor/init',[$this, 'init']);
-        }
-        
-    }
-
     public function is_compatible(): bool {
         // Проверка, установлен ли и активирован ли Elementor
         if ( ! did_action( 'elementor/loaded' ) ) {
@@ -107,6 +100,7 @@ final class Elementor_Test_Extension {
       require_once(__DIR__ . '/widgets/slider-widget.php');
       require_once(__DIR__ . '/widgets/team-widget.php');
       require_once(__DIR__ . '/widgets/servis-widget.php');
+      require_once(__DIR__ . '/widgets/cars-widget.php');
 
     $widgets_manager = \Elementor\Plugin::instance()->widgets_manager;
 
@@ -115,6 +109,7 @@ final class Elementor_Test_Extension {
     $widgets_manager->register(new \Elementor_Slider_Widget());
     $widgets_manager->register(new \Elementor_Team_Widget());
     $widgets_manager->register(new \Elementor_Servis_Widget());
+    $widgets_manager->register(new \Elementor_Cars_Widget());
      }
 
 }

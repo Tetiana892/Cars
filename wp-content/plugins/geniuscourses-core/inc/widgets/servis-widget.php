@@ -9,7 +9,7 @@ class Elementor_Servis_Widget extends \Elementor\Widget_Base {
     return esc_html__( 'Geniuscourses Servis', 'geniuscourses-core' );
   }
 
-  public function get_icon() {
+  public function get_icon(): string {
     return 'eicon-handle';
   }
 

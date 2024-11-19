@@ -11,18 +11,18 @@ defined( 'ABSPATH' ) || exit;
 Redux::set_section(
 	$opt_name,
 	array(
-		'title'            => esc_html__( 'Radio', 'your-textdomain-here' ),
+		'title'            => esc_html__( 'Radio', 'geniuscourses' ),
 		'id'               => 'basic-radio',
 		'subsection'       => true,
 		'customizer_width' => '500px',
-		'desc'             => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-fields/radio.html" target="_blank">https://devs.redux.io/core-fields/radio.html</a>',
+		'desc'             => esc_html__( 'For full documentation on this field, visit: ', 'geniuscourses' ) . '<a href="https://devs.redux.io/core-fields/radio.html" target="_blank">https://devs.redux.io/core-fields/radio.html</a>',
 		'fields'           => array(
 			array(
 				'id'       => 'opt-radio',
 				'type'     => 'radio',
-				'title'    => esc_html__( 'Radio Option', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'No validation can be done on this field type', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+				'title'    => esc_html__( 'Radio Option', 'geniuscourses' ),
+				'subtitle' => esc_html__( 'No validation can be done on this field type', 'geniuscourses' ),
+				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'geniuscourses' ),
 
 				// Must provide key => value pairs for radio options.
 				'options'  => array(
@@ -35,9 +35,9 @@ Redux::set_section(
 			array(
 				'id'       => 'opt-radio-data',
 				'type'     => 'radio',
-				'title'    => esc_html__( 'Radio Option w/ Menu Data', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'No validation can be done on this field type', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+				'title'    => esc_html__( 'Radio Option w/ Menu Data', 'geniuscourses' ),
+				'subtitle' => esc_html__( 'No validation can be done on this field type', 'geniuscourses' ),
+				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'geniuscourses' ),
 				'data'     => 'menu',
 			),
 		),
